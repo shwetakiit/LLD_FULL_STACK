@@ -1,0 +1,45 @@
+<html>
+  <head> </head>
+  <body>
+    <table border="1px">
+      <caption>
+        Student details
+      </caption>
+      <!--We can write purpose of tabl here-->
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Batch Name</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Shaun</td>
+          <td>+1647564</td>
+          <td>D3</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Piyush</td>
+          <!--Merge two row , Let's say two student with same name piyush-->
+          <td>+935435</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>+916564534</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>Piyush</td>
+          <td>+9165664534</td>
+          <td>C</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td colspan="3">This is a disclaimer about the data</td>
+        <!--Coldspaln=3 It will merge three column in one -->
+      </tfoot>
+    </table>
+  </body>
+</html>
