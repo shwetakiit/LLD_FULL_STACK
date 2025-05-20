@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--DOCType tell , use HTML 5 version-->
+<html>
+  <head></head>
+  <body>
+    <form action="/submit">
+      <div>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required name="name" />
+      </div>
+      <div>
+        <label>Phone</label>
+        <input
+          type="number"
+          placeholder="Enter your contact number"
+          name="phone"
+        />
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email id" name="email" />
+      </div>
+      <div>
+        <label>Message</label>
+        <input type="txt" style="height: 100px" name="message" />
+      </div>
+      <div>
+        <label>Course Preference</label>
+        <label>FFE1</label>
+        <input type="checkbox" name="FF1"value="FF1" />
+        <label>FFE2</label>
+        <input type="checkbox" name="FF2" value="FF2" />
+      </div>
+      <div>
+        <label>Gender</label>
+        <label>Male</label>
+        <input type="radio" />
+        <label>Female</label>
+        <input type="radio">
+        <label>Others</label>
+        <input type="radio">
+      </div>
+      <div>
+        <label>Select city</label>
+        <select name="city">
+            <option value="blr">Bangalore</option>
+            <option value="ndls">Delhi</option>
+            <option value="pn">Pune</option>
+        </select>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
