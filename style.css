@@ -1,0 +1,29 @@
+
+#fingers{
+    background-color: green;
+}
+
+  /* Ul with class firstUL should be change    */
+/* .firstUl ul{                   
+    color: red;
+}
+
+*/
+
+ /* Ul with class firstUL should be change    */
+.firstUl ul li:first-child{  
+    color: pink;
+} 
+li:hover{
+    background-color:red;
+}
+.firstUl>li:hover{
+    background-color: blanchedalmond;
+}
+/* all UL of class firstUl */
+/* ul.firstUl{  
+    color: yellow;
+}  */
+.firstUl.secondUI{
+   color: green;
+}
