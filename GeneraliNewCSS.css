@@ -1,0 +1,242 @@
+html, body {
+overflow-y: auto !important;
+}
+
+body{
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+width: 100%;
+padding: 0;
+margin: 0;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: white;
+color: white;
+padding: 12px 100px;
+z-index: 1;
+box-shadow: 0 4px 3px #0000001a !important;
+}
+
+.navbar img {
+height: auto;
+}
+
+.main{flex: 1 !important;
+padding: 0 100px;}
+
+.main .top-div {margin:15px 0px; display: flex; justify-content: space-between;}
+
+.main .main-heading{font-size:24px; font-weight:600;padding:15px 0px;margin-top:0px;margin-bottom: 0px;color:#283141}
+
+.main .sub-heading{margin-top: 0px;}
+
+.MSTR_card {
+color: white;
+padding: 17px;
+display: grid;
+gap:17px;
+border-radius: 7px;      
+align-items: center;
+transition: transform 0.3s ease-in-out;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+background-color: #e8ebf4 !important;
+}
+
+.MSTR_card  span{font-weight: 500;
+font-size: 17px;
+color:#5a6576 !important}
+
+
+
+.MSTR_card i {
+font-size: 27px;
+margin-right: 10px;
+color:#3d86c2;
+}
+
+.MSTR_card i:first-child{
+font-size: 20px !important;
+color:white !important;
+border-radius:5px;
+padding:7px 9px;
+}
+
+.MSTR_card  .grid-head{
+text-align:left;}
+
+.MSTR_card  .grid-icon{
+display:flex;
+justify-content:space-between;}
+
+.MSTR_card  .grid-icon .plans{
+color:#283141;
+font-size: 19px;
+font-weight: 600;
+margin-top: 10px;
+margin-bottom: 0px;
+}
+
+.MSTR_card .button{background-color: #0154a2;
+padding: 10px 15px;
+color: white;
+outline: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;}
+
+.MSTR_card .grid-icon .topBotton {
+background-color: #f28743;
+border-radius: 15px;
+border: 0px;
+padding: 0px 12px;
+color: white;
+height: 25px;
+font-weight: 600;
+}
+
+div.plan-details-root{
+margin-top: 14px;
+margin-bottom: 20px;
+max-height: 400px;
+overflow-y: auto;
+width: 100%;
+}
+
+
+table.plan-details {
+border-collapse: separate; /* Needed for border-radius to work */
+border-spacing: 0;
+width: 100%;
+border-left: 1px solid #dddddd;
+border-right: 1px solid #dddddd;
+border-radius: 10px;  
+}
+
+
+table.plan-details th {
+padding: 12px 18px;
+background-color: #ebebf5;
+text-align: left;
+position: sticky;
+top: 0;
+z-index: 2;
+}
+
+table.plan-details tr.row-heading{
+    background-color: #ebebf5;
+    
+}
+
+table.plan-details tr.row-heading td{
+text-align: center !important;
+padding: 12px 18px;
+font-weight: 600;
+}
+
+table.plan-details th:first-child{
+    border-top-left-radius:10px;
+}
+
+table.plan-details th:last-child{
+    border-top-right-radius:10px;
+}
+
+table.plan-details td {
+border-top: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
+border-left: none;
+border-right: none;
+text-align: left;
+padding: 15px 18px;
+font-size: 14.5px;
+}
+
+table.plan-details td img{
+width: 20px;;
+}
+
+table.plan-details td p{
+margin: 0px;
+margin-bottom: 3px;
+}
+
+table.plan-details td span{
+color: gray;
+}
+
+table.plan-details td input[type="date"] {
+	padding:6px 8px;
+	border:1px solid #bfbfbf;
+	border-radius:5px;
+}
+
+
+
+.MSTR_card .grid-price p{margin:0px;
+font-size:29px;
+text-align:left;
+font-weight: 600;
+color: black;}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Three cards in each row */  
+gap: 50px;
+margin: 30px 0px;
+}
+
+footer {
+background-color: #18589c;
+color: white;
+text-align: center;
+padding:5px 10px;
+}
+
+
+@media (max-width:1430px) {
+.main{padding: 0 120px;}
+.navbar{padding: 12px 120px;}
+}
+
+@media (max-width:1348px) {
+.main{padding: 0 100px;}
+.navbar{padding: 12px 100px;}
+}
+
+@media (max-width:1308px) {
+.main{padding: 0 70px;}
+.navbar{padding: 12px 70px;}
+}
+
+@media (max-width:1248px) {
+.main{padding: 0 50px;}
+.navbar{padding: 12px 50px;}
+.MSTR_card span {font-size: 15px !important;}
+
+}
+
+@media (max-width: 978px) {
+.main {
+padding: 0 20px;
+}
+.navbar{padding: 10px 20px;}
+
+.MSTR_card i {
+font-size: 30px;
+}
+
+.MSTR_card span {
+font-size: 16px;
+}
+}

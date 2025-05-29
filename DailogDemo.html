@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Dialog functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+          <link rel="stylesheet"" href="/GeneraliNewCSS.css" />
+             <link rel="stylesheet"" href="/style1.css" />
+      <!-- CSS -->
+      <!-- <style>
+         .ui-widget-header,.ui-state-default, ui-button {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+      </style> -->
+      
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#dialog-1" ).dialog({
+             autoOpen :false, width :800 ,modal:true,title:"Hello"
+            });
+            $( "#opener" ).click(function() {
+               $( "#dialog-1" ).dialog( "open" );
+            });
+         });
+
+         
+      </script>
+   </head>
+   
+   <body>
+ 
+    <button id = "opener">Open Dialog</button>
+ 
+	  <div id="dialog-1">
+      	  <div class="top-div"> 
+        <div><p class="main-heading">Insurance Plans & Pricing</p>
+         <p class="sub-heading">Secure your cruise with Generali Insurance with comprehensive coverage for a safe, worry-free journey</p>
+        </div>
+        <div>
+          <img src="generali.jpg" style="width: 100px;" />
+        </div>
+		</div>
+		
+        <div class="grid fade-in">
+		  
+          <div class="MSTR_card">
+            <div class="grid-icon"><p class="plans">Premium</p></div>
+            <div class="grid-head"><span>Complete Protection for Your Cruise Journey</span></div>
+            <div class="grid-price"><p>$155.00 <span>/ Policy</span></p></div>
+			       <button class="button">Select Plan</button>
+          </div>
+
+		  
+          <div class="MSTR_card">
+            <div class="grid-icon"><p class="plans">Preferred</p> <button class="topBotton">Popular</button></div>
+            <div class="grid-head"><span>Exceptional Value with Comprehensive Coverage</span></div>
+            <div class="grid-price"><p>$140.00 <span>/ Policy</span></p></div>
+            <button class="button">Select Plan</button>
+          </div>
+		  
+		  
+          <div class="MSTR_card">
+            <div class="grid-icon"><p class="plans">Standard Plan</p></div>
+            <div class="grid-head"><span>Affordable Protection Tailored for Every Traveler</span></div>
+		     	  <div class="grid-price"><p>$155.00 <span>/ Policy</span></p></div>
+           <button class="button">Select Plan</button>
+          </div>
+		
+		  
+        </div>
+		
+        <div class="plan-details-root">
+          <table class="plan-details">
+            <tr>
+              <th>Coverages</th>
+              <th>Premium</th>
+              <th>Preferred</th>
+              <th>Standard</th>
+            </tr>
+            <tr>
+              <td>Coverage for COVID-19 Sickness</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+            <tr>
+              <td>Trip Cancellation</td>
+              <td><p>100% </p>
+              <span>of trip cost insured</span></td>
+              <td><p>100% </p>
+                <span>of trip cost insured</span></td>
+              <td><p>100% </p>
+                <span>of trip cost insured</span></td>
+            </tr>
+            <tr>
+              <td>Trip Interruption</td>
+              <td><p>175% </p>
+                <span>of trip cost insured</span></td>
+              <td><p>150% </p>
+                  <span>of trip cost insured</span></td>
+              <td><p>125% </p>
+                  <span>of trip cost insured</span></td>
+            </tr>
+            <tr>
+              <td>Travel Delay</td>
+              <td><p>$1000 / Per Person</p>
+                <span>$300 per person daily limit applies</span></td>
+              <td><p>$1000 / Per Person</p>
+                <span>$200 per person daily limit applies</span></td>
+              <td><p>$1000 / Per Person</p>
+                <span>$150 per person daily limit applies</span>
+                </td>
+            </tr>
+            <tr>
+              <td>Baggage</td>
+              <td><p>$2000</p>
+                <span>Per Person</span> </td>
+              <td><p>$1500</p>
+                <span>Per Person</span> </td>
+              <td><p>$1000</p>
+                <span>Per Person </span>
+                </td>
+            </tr>
+            <tr>
+              <td>Baggage Delay</td>
+              <td><p>$500</p>
+                <span>Per Person</span></td>
+              <td><p>$300</p>
+                <span>Per Person</span></td>
+              <td><p>$200</p>
+                <span>Per Person </span>
+                </td>
+            </tr>
+            <tr>
+              <td>Sporting Equipment</td>
+              <td><p>$500</p>
+                <span>Per Person</span> </td>
+              <td><p>$300</p>
+                <span>Per Person</span> </td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <td>Sporting Equipment Delay</td>
+              <td><p>$500</p>
+                <span>Per Person</span></td>
+              <td><p>$300</p>
+                <span>Per Person</span></td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <td>Missed Connection</td>
+              <td><p>$1,000</p>
+                <span>Per Person</span></td>
+              <td><p>$750</p>
+                <span>Per Person</span></td>
+              <td><p>$500</p>
+                <span>Per Person</span></td>
+            </tr>
+            <tr>
+              <td>Medical & Dental</td>
+              <td><p>$250,000</p>
+                <span>Per Person</span> </td>
+              <td><p>$150,000</p>
+                <span>Per Person</span> </td>
+              <td><p>$50,000</p>
+                <span>Per Person</span> </td>
+            </tr>
+            <tr>
+              <td><p>Emergency Assistance & Transportation</p>
+               <span>$10,000 limit applies for companion hospitality expenses</span> </td>
+              <td><p>$1,000,000</p>
+                <span>Per Person</span> </td>
+              <td><p>$500,000</p>
+                <span>Per Person</span> </td>
+              <td><p>$250,000</p>
+                <span>Per Person</span> </td>
+            </tr>
+            <tr>
+              <td><p>Accidental Death & Dismemberment - Air Flight Accident</p></td>
+              <td><p>$100,000 / Per Person</p>
+                <span>$200,000 / Per Plan</span> </td>
+              <td><p>$75,000 / Per Person</p>
+                <span>$150,000 / Per Plan</span> </td>
+              <td><p>$55,000 / Per Person</p>
+                <span>$100,000 / Per Plan</span> </td>
+            </tr>
+            <tr>
+              <td><p>Accidental Death & Dismemberment - Travel Accident</p></td>
+              <td><p>$50,000 / Per Person</p>
+                <span>$100,000 / Per Plan</span> </td>
+              <td><p>$25,000 / Per Person</p>
+                <span>$50,000 / Per Plan</span> </td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <td>Coverage for Pre-Existing Medical Conditions</td>
+              <td><p>Included</p>
+                <span>Requirements Apply</span></td>
+              <td> - </td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <td>Coverage for Financial Insolvency</td>
+              <td><p>Included</p>
+                <span>Requirements Apply</span></td>
+              <td><p>Included</p>
+                <span>Requirements Apply</span></td>
+              <td> - </td>
+            </tr>
+			<tr>
+              <td>24-Hour Travel Assistance Services</td>
+              <td><img src="tick.jpg /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+			<tr>
+              <td>Telemedicine</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+			<tr>
+              <td>No Out-of-Pocket Medical</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+			<tr>
+              <td>Concierge Services</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+			<tr>
+              <td>Identity Theft Resolution Services</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+             <tr class="row-heading">
+              <td colspan="4">Features</td>
+            </tr>
+            <tr>
+              <td>Coverage for Pre-Existing Medical Conditions</td>
+              <td><p>Included</p>
+                <span>Requirements Apply</span></td>
+              <td> - </td>
+              <td> - </td>
+            </tr>
+            <tr>
+              <td>Coverage for Financial Insolvency</td>
+              <td><p>Included</p>
+                <span>Requirements Apply</span></td>
+              <td><p>Included</p>
+                <span>Requirements Apply</span></td>
+              <td> - </td>
+            </tr>		
+		    
+			<tr class="row-heading">
+              <td colspan="4">Travel Services <br/>
+			  <span>Provided by Generali s designated provider. Assistance service fees included in total plan cost (see important disclosures link below).</span></td>
+            </tr>
+            <tr>
+              <td>24-Hour Travel Assistance Services</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+			<tr>
+              <td>Telemedicine</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+			<tr>
+              <td>No Out-of-Pocket Medical</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+			<tr>
+              <td>Concierge Services</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg /></td>
+            </tr>
+			<tr>
+              <td>Identity Theft Resolution Services</td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+              <td><img src="tick.jpg" /></td>
+            </tr>
+			<tr class="row-heading">
+              <td colspan="4">Optional Coverages</td>
+            </tr>
+            <tr>
+              <td><p>Rental Car Damage Coverage</p>
+			  <span>Not available to residents of Texas</span></td>
+              <td><p>$25,000 / Per person / per plan</p>
+                <span>Included</span></td>
+              <td><p><input type="checkbox" /> $25,000 / Per person / per plan</p>
+                <p>$9 / Per day</p></td>
+              <td><p><input type="checkbox" /> $25,000 / Per person / per plan</p>
+                <p>$9 / Per day</p></td>
+            </tr>
+			<tr class="row-heading">
+              <td colspan="4"><p>Trip Cancellation for Any Reason</p>
+			  <span>Not available to residents of New York</span></br>
+			  <span>Get up to 60% reimbursement for cancellations with the Premium plan upgrade. Conditions apply</span></td>
+            </tr>
+            <tr>
+              <td><p>Trip Cancellation</p></td>
+              <td><p><input type="checkbox" />60% of the penalty amount Is CFAR right for me?</p>
+                <span>Initial Deposit Date</span><br/>
+				<input type="date"  /></td>
+              <td></td>
+              <td></td>
+            </tr>				
+          </table>
+        </div>
+  
+    </div>
+    </div>
+	    </body>
+</html>
